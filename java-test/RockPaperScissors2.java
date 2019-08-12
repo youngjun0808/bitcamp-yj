@@ -22,19 +22,28 @@ class RockPaperScissors2{
         if(com == p){
             System.out.print(com);
             System.out.println("비겼습니다.");
-        }else if(com < 3){
+        }else if(com == 1){
+            com = com + 1;
             if(com < p){
-                System.out.println("YOU WIN");
+                System.out.println("YOU Lose");
+            }else {
+                System.out.println("You Win");
+            }
+        }else if(com == 2){
+            if(com < p){
+                System.out.println("You Win");
+            }else {
+                System.out.println("You Lose");
+            }
+        }else if(com == 3){
+            com = com - 1;
+            if(com > p){
+                System.out.println("You Win");
             }else {
                 System.out.println("You Lose");
             }
         }else {
-            p = p + 2;
-            if(com < p){
-                System.out.println("You Lose");
-            }else {
-                System.out.println("You Win");
-            }
+            System.out.println("잘못된 입력입니다.");
         }
     }
 }
