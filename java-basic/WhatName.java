@@ -10,10 +10,10 @@ class WhatName{
         Scanner scanner = new Scanner(System.in);
         name = scanner.next();
         
-        System.out.println("이름은 " + name + "이다");
+        System.out.println(String.format("이름은  %s 이다", name));
         System.out.print("몇살이에요?");
         int age = 0;
         age = scanner.nextInt();
-        System.out.print("나이는 "+ age +" 이다.");
+        System.out.print(String.format("나이는  %d  이다.", age));
     }
 }
